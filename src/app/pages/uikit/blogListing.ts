@@ -99,8 +99,8 @@ export interface Blog {
                          <th style="min-width: 12rem">Title</th>
                          <th style="min-width: 12rem">Description</th>
                          <th style="min-width: 14rem">Author</th>
-                         <th style="min-width: 10rem">ACtion</th>
-                 >
+                         <th style="min-width: 10rem">Action</th>
+                 
                     </tr>
             </ng-template>
 
@@ -123,7 +123,7 @@ export interface Blog {
                         <td>
                             {{ blogPost?.author?.email }}
                         </td>
-                            <td>
+                           
                                <td>
                         <p-button icon="pi pi-pencil" class="mr-2" [rounded]="true" [outlined]="true" (click)="editblogFn(blogPost)" />
                         <p-button icon="pi pi-trash" severity="danger" [rounded]="true" [outlined]="true" (click)="deleteblogFn(blogPost)" />
